@@ -28,7 +28,7 @@ Base.metadata.create_all(bind=engine)
 
 # templates = Jinja2Templates(directory="TodoApp/templates")  #set the path of directory where we will keep our HTML files.
 
-app.mount("/static",StaticFiles(directory="TodoApp/static"),name="static") #tells FastAP when you render HTML file, render static files from this directory
+app.mount("/static",StaticFiles(directory="static"),name="static") #tells FastAP when you render HTML file, render static files from this directory
 
 #testendpoint that allow us to open up this HTML file
 # so we are calling get request to get an HTML file. similarly for jinja2 to work correctly, we need to accept that request and able to return a type og request - It will be same request that is coming from fastapi - see import section
