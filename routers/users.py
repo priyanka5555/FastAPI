@@ -6,7 +6,7 @@ from starlette import status
 from database import SessionLocal
 from models import Users
 from passlib.context import CryptContext
-from auth import get_current_user
+from .auth import get_current_user
 
 router = APIRouter(
     prefix='/users',
